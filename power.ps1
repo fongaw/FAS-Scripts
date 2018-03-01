@@ -1,0 +1,1 @@
+Add-Computer –DomainName mylab.local –Credential (Get-Credential)
