@@ -22,7 +22,7 @@ netsh interface ip add dns name="Ethernet" \\\\\\\*REMOVEDFORPRIVACY*///////
 echo "Ignore the error configuring DNS"
 
 echo "Configuring registry to append DNS suffixes"
-reg add "HKLM\System\currentcontrolset\services\tcpip\parameters" /v SearchList /d "ou.ad3.ucdavis.edu,ex.ad3.ucdavis.edu,ad3.ucdavis.edu,ucdavis.edu" /f
+reg add "HKLM\System\currentcontrolset\services\tcpip\parameters" /v SearchList /d "\\\\\\\*REMOVEDFORPRIVACY*///////,\\\\\\\*REMOVEDFORPRIVACY*///////,\\\\\\\*REMOVEDFORPRIVACY*///////,\\\\\\\*REMOVEDFORPRIVACY*///////" /f
 
 echo "Configuring WINS, Enable NetBIOS over TCP/IP"
 wmic nicconfig where index=1 call SetTcpipNetbios 1
