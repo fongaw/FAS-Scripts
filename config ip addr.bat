@@ -5,20 +5,20 @@ set /p IP_Addr=
 echo "Changing Static IP Address"
 
 echo "Changing Default Gateway:"
-set D_Gate= 169.237.134.126
+set D_Gate= \\\\\\\*REMOVEDFORPRIVACY*///////
 
 echo "Changing Subnet Mask:"
-set Sub_Mask= 255.255.255.128
+set Sub_Mask= \\\\\\\*REMOVEDFORPRIVACY*///////
 
 echo "Configuring Static IP Information"
 
 netsh interface ip set address "Ethernet" static %IP_Addr% %Sub_Mask% %D_Gate% gwmetric=0
 
 echo "Configuring DNS Settings."
-netsh interface ip set dns name="Ethernet" static 169.237.229.82 primary
-netsh interface ip add dns name="Ethernet" 169.237.229.83
-netsh interface ip add dns name="Ethernet" 169.237.1.250
-netsh interface ip add dns name="Ethernet" 169.237.250.250
+netsh interface ip set dns name="Ethernet" static \\\\\\\*REMOVEDFORPRIVACY*/////// primary
+netsh interface ip add dns name="Ethernet" \\\\\\\*REMOVEDFORPRIVACY*///////
+netsh interface ip add dns name="Ethernet" \\\\\\\*REMOVEDFORPRIVACY*///////
+netsh interface ip add dns name="Ethernet" \\\\\\\*REMOVEDFORPRIVACY*///////
 echo "Ignore the error configuring DNS"
 
 echo "Configuring registry to append DNS suffixes"
